@@ -6,9 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
 header {
     background-color: #e71488;
     color: white;
@@ -45,67 +42,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Section
-main {
-    padding: 20px;
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
- */
-main {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-}
-
-#Complementos {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-.carta {
-    background-color: #f4f4f4;
-    border: #f4f4f4;
-    columns: 2;
-}
-
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-
-/*
-.carta button{
-    background-color: #e71488;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.carta button:hover{
-    background-color: #e7148833;
-
-}
-*/
 
 /* Diseño Responsivo */
 @media (min-width: 600px) and (max-width: 600px) {
     main {
         grid-template-columns: 1fr;
-        /* 1 columna en pantallitas */
+        /* 1 columna en pantallas pequeñas */
     }
 }
 
