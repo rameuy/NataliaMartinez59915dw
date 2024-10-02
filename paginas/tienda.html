@@ -4,59 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilotienda.css">
+    <link rel="stylesheet" href="/css/estilotienda.css">
     <title>Rame</title>
 </head>
 
 <body>
     <header>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-        <div class="contenedor">
-
+        <div class="header-contenido">
+            <h2>Ramé</h2>
+        
             <nav>
-                <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-                    rel="stylesheet">
                 <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="complementos.html">Complementos</a>
-                    </li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="complementos.html">Complementos</a></li>
                     <li>
                         <a href="tienda.html">Tienda</a>
+                        <ul class="submenu">
+                            <li><a href="joyas/anillos.html">Anillos</a></li>
+                            <li><a href="joyas/conjuntos.html">Conjuntos</a></li>
+                            <li><a href="joyas/dijes.html">Dijes</a></li>
+                            <li><a href="joyas/pulseras.html">Pulseras</a></li>
+                        </ul>
+
                     </li>
-                    <li>
-                        <a href="registro.html">Registro</a>
-                    </li>
-                    <li>
-                        <a href="contactanos.html">Contactanos!</a>
-                    </li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="contactanos.html">Contáctanos!</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <ul>
-            <li>
-                <a href="joyas/anillos.html">Anillos</a>
-            </li>
-            <li>
-                <a href="joyas/conjuntos.html">Conjuntos</a>
-            </li>
-            <li>
-                <a href="joyas/dijes.html">Dijes</a>
-            </li>
-            <li>
-                <a href="joyas/pulseras.html">Pulseras</a>
-            </li>
-        </ul>
+        <section id="hero">
+            <div class="hero-image-container">
+                <img src="../paginas/img/sofitienda.jpg" alt="../paginas/img/sofitienda">
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer">
-
             <p>&copy; Rame___uy, Since 2022</p>
-
         </div>
     </footer>
 </body>

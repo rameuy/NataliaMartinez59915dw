@@ -1,0 +1,226 @@
+/* Estilos generales del menú principal */
+body {
+    font-family: 'Quicksand', sans-serif; /* Asegúrate de que la fuente esté aplicada */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+
+}
+
+
+.header-contenido {
+    background-color: #e71488;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header-contenido h2 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0; /* Quitar margen del título */
+    color: #fff;
+    background-color: #e71488;
+}
+
+nav {
+    background-color:#e71488; /* Color de fondo del menú principal */
+    padding: 10px 0; /* Espaciado vertical */
+    margin-left: auto; /* Empuja el nav a la derecha */
+}
+
+nav ul {
+    list-style: none; /* Quitar estilo de lista */
+    padding: 0; /* Quitar padding */
+    display: flex; /* Usar flex para alinear los elementos */
+}
+
+/* Estilo para los elementos del menú principal */
+nav ul > li {
+    display: inline-block; /* Muestra los elementos en línea */
+    position: relative; /* Necesario para el submenú */
+}
+
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Color del texto */
+  
+    background-color:#e714884c; /* Color de fondo del menú principal */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Cambiar color al pasar el mouse */
+nav a:hover,
+nav li .submenu li a:hover {
+    background-color:#f562ba; /* Color de fondo al pasar el mouse */
+   
+    color: #fff; /* Color del texto al pasar el mouse */
+}
+/* ---------------------------------------------------------- */
+/* Main Section */
+main {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1rem;
+}
+
+#hero img {
+    width: 100%; /* Hacer que la imagen sea responsiva */
+    height: 30%; /* Mantener la proporción */
+}
+
+img {
+    width: 100%;
+    height: 80px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+#hero button {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    display: block;
+    background-color: #e71488;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translate(10%, 10%);
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+#hero button:hover {
+    background-color: #e7148833;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.video {
+    flex: 1; /* Permite que el video ocupe el espacio disponible */
+    text-align: center; /* Centra el video dentro de su contenedor */
+}
+.info-sections {
+    flex: 1; /* Permite que la sección de información ocupe el espacio disponible */
+    margin-left: 20px; /* Espacio entre el video y las secciones */
+}
+/* suscribete section */
+
+#Suscribirse input[type="email"],
+#Suscribirse button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#Suscribirse button {
+    background-color: #e71488;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#Suscribirse button:hover {
+    background-color: #e7148833;
+
+}
+
+
+/* Cómo Comprar Section */
+#como-comprar {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#como-comprar ul {
+    padding-left: 1.5rem;
+}
+
+#como-comprar ul ul {
+    padding-left: 1.5rem;
+}
+
+
+
+
+/* Footer  */
+footer {
+    background-color: #e71488;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Apilar en pantallas más pequeñas */
+        align-items: center; /* Centrar contenido */
+    }
+    
+    .info-sections {
+        margin-left: 0; /* Quitar margen en pantallas pequeñas */
+        margin-top: 20px; /* Espacio arriba de las secciones */
+    }
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+}

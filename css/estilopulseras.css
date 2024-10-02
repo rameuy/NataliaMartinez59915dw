@@ -6,6 +6,9 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
 header {
     background-color: #e71488;
     color: white;
@@ -42,12 +45,20 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main section */
+#Pulseras {
+    text-align: center;
+    /* Centra el texto */
+    margin: 20px 0;
+    /* Margen superior e inferior */
+}
+
 
 /* Diseño Responsivo */
 @media (min-width: 600px) and (max-width: 600px) {
     main {
         grid-template-columns: 1fr;
-        /* 1 columna en pantallas pequeñas */
+        /* 1 columna en pantallitas */
     }
 }
 

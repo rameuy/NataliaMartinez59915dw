@@ -1,0 +1,93 @@
+/* Estilos generales del menú principal */
+body {
+    font-family: 'Quicksand', sans-serif; /* Asegúrate de que la fuente esté aplicada */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+
+}
+
+
+.header-contenido {
+    background-color: #e71488;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header-contenido h2 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0; /* Quitar margen del título */
+    color: #fff;
+    background-color: #e71488;
+}
+
+nav {
+    background-color:#e71488; /* Color de fondo del menú principal */
+    padding: 10px 0; /* Espaciado vertical */
+    margin-left: auto; /* Empuja el nav a la derecha */
+}
+
+nav ul {
+    list-style: none; /* Quitar estilo de lista */
+    padding: 0; /* Quitar padding */
+    display: flex; /* Usar flex para alinear los elementos */
+}
+
+/* Estilo para los elementos del menú principal */
+nav ul > li {
+    display: inline-block; /* Muestra los elementos en línea */
+    position: relative; /* Necesario para el submenú */
+}
+
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Color del texto */
+  
+    background-color:#e71488; /* Color de fondo del menú principal */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Cambiar color al pasar el mouse */
+nav a:hover,
+nav li .submenu li a:hover {
+    background-color:#f562ba; /* Color de fondo al pasar el mouse */
+   
+    color: #fff; /* Color del texto al pasar el mouse */
+}
+/*Main section*/
+
+.main
+{
+    main {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 1rem;
+    }
+    
+}
+
+
+
+/* Footer  */
+footer {
+    background-color: #e71488;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
