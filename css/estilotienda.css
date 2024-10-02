@@ -1,6 +1,6 @@
 /* Estilos generales del menú principal */
 body {
-    font-family: 'Quicksand', sans-serif; /* Asegúrate de que la fuente esté aplicada */
+    font-family: 'Quicksand', sans-serif; 
     margin: 0; /* Eliminar márgenes predeterminados */
     padding: 0; /* Eliminar padding predeterminado */
 
@@ -8,16 +8,21 @@ body {
 
 
 .header-contenido {
+    background-color: #e71488;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
-
+.header-contenido h2 {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;  
+}
 
 h2 {
     margin: 0; /* Quitar margen del título */
     color: #fff;
+    background-color: #e71488;
 }
 
 nav {
@@ -38,16 +43,24 @@ nav ul > li {
     position: relative; /* Necesario para el submenú */
 }
 
+
 nav a {
     display: block;
     padding: 15px 20px;
     text-decoration: none;
     color: white; /* Color del texto */
   
-    background-color:#e71488; /* Color de fondo del menú principal */
+    background-color:#e714884c; /* Color de fondo del menú principal */
     color: #ffffff; /* Color del texto */
 }
 
+/* Cambiar color al pasar el mouse */
+nav a:hover,
+nav li .submenu li a:hover {
+    background-color:#f562ba; /* Color de fondo al pasar el mouse */
+   
+    color: #fff; /* Color del texto al pasar el mouse */
+}
 
 
 /* Estilo del submenú */
@@ -87,7 +100,7 @@ nav li:hover .submenu {
 header {
     background-color: #e71488;
     color: white;
-    padding: 1rem;
+    padding:none;
 }
 
 
