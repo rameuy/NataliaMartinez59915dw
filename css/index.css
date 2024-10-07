@@ -1,6 +1,7 @@
 /* Estilos generales del menú principal */
 body {
-    font-family: 'Quicksand', sans-serif; /* Asegúrate de que la fuente esté aplicada */
+   
+    font-family: 'Quicksand', sans-serif; 
     margin: 0; /* Eliminar márgenes predeterminados */
     padding: 0; /* Eliminar padding predeterminado */
 
@@ -14,11 +15,11 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
 }
-.header-contenido h2 {
+.header-contenido h1 {
     margin: 0;
 }
 
-h2 {
+h1 {
     margin: 0; /* Quitar margen del título */
     color: #fff;
     background-color: #e71488;
@@ -123,6 +124,7 @@ img {
     flex: 1; /* Permite que la sección de información ocupe el espacio disponible */
     margin-left: 20px; /* Espacio entre el video y las secciones */
 }
+
 /* suscribete section */
 
 #Suscribirse input[type="email"],

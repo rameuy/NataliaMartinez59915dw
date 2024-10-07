@@ -1,105 +1,78 @@
-/* Estilo en general */
+/* Estilos generales del menú principal */
 body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif; 
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+
 }
 
 
-
-
-header {
+.header-contenido {
     background-color: #e71488;
-    color: white;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header-contenido h2 {
+    margin: 0;
 }
 
-header h1 {
-    margin: 0;
-    text-align: center;
+h1 {
+    margin: 0; /* Quitar margen del título */
+    color: #ffffff;
+    background-color: #e71488;
 }
+
 
 nav {
-    text-align: center;
+    background-color:#e71488; /* Color de fondo del menú principal */
+    padding: 10px 0; /* Espaciado vertical */
+    margin-left: auto; /* Empuja el nav a la derecha */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Quitar estilo de lista */
+    padding: 0; /* Quitar padding */
+    display: flex; /* Usar flex para alinear los elementos */
 }
 
-nav ul li {
-    margin: 0 1rem;
+/* Estilo para los elementos del menú principal */
+nav ul > li {
+    display: inline-block; /* Muestra los elementos en línea */
+    position: relative; /* Necesario para el submenú */
 }
 
-nav ul li a {
-    color: white;
+
+nav a {
+    display: block;
+    padding: 15px 20px;
     text-decoration: none;
+    color: white; /* Color del texto */
+  
+    background-color:#e714884c; /* Color de fondo del menú principal */
+    color: #ffffff; /* Color del texto */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Cambiar color al pasar el mouse */
+nav a:hover,
+nav li .submenu li a:hover {
+    background-color:#f562ba; /* Color de fondo al pasar el mouse */
+   
+    color: #fff; /* Color del texto al pasar el mouse */
 }
 
-/* Main Section
-main {
-    padding: 20px;
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
- */
-main {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-}
 
-#Complementos {
+/*---------------------------------------------------------------*/
+/* Main section */
+#Conjuntos {
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    /* Centra el texto */
+    margin: 20px 0;
+    /* Margen superior e inferior */
+    color: #e71488;
 }
 
-.carta {
-    background-color: #f4f4f4;
-    border: #f4f4f4;
-    columns: 2;
-}
-
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-
-/*
-.carta button{
-    background-color: #e71488;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.carta button:hover{
-    background-color: #e7148833;
-
-}
-*/
 
 /* Diseño Responsivo */
 @media (min-width: 600px) and (max-width: 600px) {
@@ -124,4 +97,34 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
 }

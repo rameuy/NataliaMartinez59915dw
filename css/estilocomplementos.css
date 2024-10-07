@@ -1,3 +1,4 @@
+
 /* Estilos generales del menú principal */
 body {
     font-family: 'Quicksand', sans-serif; /* Asegúrate de que la fuente esté aplicada */
@@ -14,12 +15,15 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
 }
-.header-contenido h2 {
+.header-contenido h1{
+    text-align: center;
     margin: 0;
+    color: #ffffff;
 }
 
-h2 {
+h1{
     margin: 0; /* Quitar margen del título */
+    text-align: center;
     color: #fff;
     background-color: #e71488;
 }

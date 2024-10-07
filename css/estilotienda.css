@@ -19,7 +19,7 @@ body {
     font-family: 'Quicksand', sans-serif;  
 }
 
-h2 {
+h1 {
     margin: 0; /* Quitar margen del título */
     color: #fff;
     background-color: #e71488;
