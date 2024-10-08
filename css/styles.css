@@ -1,0 +1,205 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-contenido {
+  background-color: #e71488;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header-contenido h1 {
+  margin: 0;
+  color: #fff;
+  background-color: #e71488;
+}
+
+nav {
+  background-color: #e71488;
+  padding: 10px 0;
+  margin-left: auto;
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+nav ul > li {
+  display: inline-block;
+  position: relative;
+}
+nav ul > li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(231, 20, 136, 0.3);
+}
+nav ul > li a:hover {
+  background-color: #f562ba;
+  color: #fff;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 1rem;
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main #hero {
+  text-align: center;
+  position: relative;
+}
+main #hero img {
+  width: 100%;
+  height: 30%;
+}
+main #hero button {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  display: block;
+  background-color: #e71488;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transform: translate(10%, 10%);
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+main #hero button:hover {
+  background-color: rgba(231, 20, 136, 0.2);
+  border-radius: 20px;
+}
+main .video-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+main .video-container .video {
+  flex: 1;
+  text-align: center;
+}
+main .video-container .info-sections {
+  flex: 1;
+  margin-left: 20px;
+}
+
+#Suscribirse input[type=email],
+#Suscribirse button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#Suscribirse input[type=email]:hover,
+#Suscribirse button:hover {
+  background-color: rgba(231, 20, 136, 0.2);
+}
+#Suscribirse button {
+  background-color: #e71488;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#como-comprar {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#como-comprar ul {
+  padding-left: 1.5rem;
+}
+#como-comprar ul ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: #e71488;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-container .info-sections {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  nav ul li a {
+    padding: 10px 20px;
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  nav ul {
+    justify-content: center;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

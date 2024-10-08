@@ -60,14 +60,14 @@ nav li .submenu li a:hover {
    
     color: #fff; /* Color del texto al pasar el mouse */
 }
-h3 {
+h1 {
     text-align: center;
     color: #e71488;
     background-color: #fff;
 }
 /*---------------------------------------------------------------*/
 /* Main section */
-#Pulseras {
+#Dijes {
     text-align: center;
     /* Centra el texto */
     margin: 20px 0;
