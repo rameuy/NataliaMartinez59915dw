@@ -1,0 +1,20 @@
+// Variables
+$color-principal: #e71488;
+$color-hover: #f562ba;
+$color-fondo: #f4f4f4;
+$color-texto: #fff;
+
+// Mixin para animación
+@mixin fadeIn($duration: 1.5s, $timing: ease-in) {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    animation: fadeIn $duration $timing;
+}

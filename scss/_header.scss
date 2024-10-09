@@ -1,0 +1,93 @@
+
+.header-contenido {
+    background-color: #e71488;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+h1 {
+    margin: 0;
+
+    /* Quitar margen del título */
+    color: #fff;
+    background-color: #e71488;
+}
+
+nav {
+    background-color: #e71488;
+
+    /* Color de fondo del menú principal */
+    padding: 10px 0;
+
+    /* Espaciado vertical */
+    margin-left: auto;
+
+    /* Empuja el nav a la derecha */
+
+    ul {
+        list-style: none;
+
+        /* Quitar estilo de lista */
+        padding: 0;
+
+        /* Quitar padding */
+        display: flex;
+
+        /* Usar flex para alinear los elementos */
+
+        >li {
+            display: inline-block;
+
+            /* Muestra los elementos en línea */
+            position: relative;
+
+            /* Necesario para el submenú */
+        }
+    }
+
+    a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+
+        /* Color del texto */
+
+        background-color: #e714884c;
+
+        /* Color de fondo del menú principal */
+        color: #ffffff;
+
+        /* Color del texto */
+
+        &:hover {
+            background-color: #f562ba;
+
+            /* Color de fondo al pasar el mouse */
+
+            color: #fff;
+
+            /* Color del texto al pasar el mouse */
+        }
+    }
+
+    li .submenu li a:hover {
+        background-color: #f562ba;
+
+        /* Color de fondo al pasar el mouse */
+
+        color: #fff;
+
+        /* Color del texto al pasar el mouse */
+    }
+}
+
+/* Estilo para los elementos del menú principal */
+
+/* Cambiar color al pasar el mouse */

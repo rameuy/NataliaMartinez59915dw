@@ -1,0 +1,83 @@
+/* Estilo del submenú */
+
+nav {
+    li .submenu {
+        display: none;
+
+        /* Oculta el submenú por defecto */
+        position: absolute;
+
+        /* Se coloca en relación con el <li> padre */
+        left: 0;
+        top: 100%;
+
+        /* Se coloca justo debajo del elemento padre */
+        background-color: #e71488;
+
+        /* Color de fondo del submenu*/
+        border-radius: 5px;
+
+        /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.082);
+
+        /* Sombra para el submenú */
+        z-index: 1;
+
+        /* Asegura que el submenú esté por encima */
+
+        li {
+            width: 150px;
+
+            /* Ancho del submenú */
+
+            a {
+                padding: 10px 15px;
+
+                /* Espaciado dentro del enlace del submenú */
+                color: white;
+
+                /* Color del texto del submenú */
+            }
+        }
+    }
+
+    a:hover {
+        background-color: #f562ba;
+
+        /* Color de fondo al pasar el mouse */
+
+        color: #fff;
+
+        /* Color del texto al pasar el mouse */
+    }
+
+    li {
+        .submenu li a:hover {
+            background-color: #f562ba;
+
+            /* Color de fondo al pasar el mouse */
+
+            color: #fff;
+
+            /* Color del texto al pasar el mouse */
+        }
+
+        &:hover .submenu {
+            display: block;
+
+            /* Muestra el submenú al pasar el mouse sobre el padre */
+        }
+    }
+}
+
+/* Estilo de los elementos del submenú */
+
+/* Cambiar color al pasar el mouse */
+
+/* Mostrar el submenú al pasar el mouse sobre el padre */
+
+header {
+    background-color: #e71488;
+    color: white;
+    padding: none;
+}

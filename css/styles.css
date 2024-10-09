@@ -1,118 +1,161 @@
-body {
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
-  padding: 0;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    /* Apilar en pantallas más pequeñas */
+    align-items: center;
+    /* Centrar contenido */
+  }
+  .info-sections {
+    margin-left: 0;
+    /* Quitar margen en pantallas pequeñas */
+    margin-top: 20px;
+    /* Espacio arriba de las secciones */
+  }
 }
-
+/* Media Queries */
+@media (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  nav ul li a {
+    padding: 10px 20px;
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+}
 .header-contenido {
   background-color: #e71488;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  animation: fadeIn 1.5s ease-in;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .header-contenido h1 {
   margin: 0;
+}
+
+h1 {
+  margin: 0;
+  /* Quitar margen del título */
   color: #fff;
   background-color: #e71488;
 }
 
 nav {
   background-color: #e71488;
+  /* Color de fondo del menú principal */
   padding: 10px 0;
+  /* Espaciado vertical */
   margin-left: auto;
-  animation: fadeIn 1.5s ease-in;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  /* Empuja el nav a la derecha */
 }
 nav ul {
   list-style: none;
+  /* Quitar estilo de lista */
   padding: 0;
+  /* Quitar padding */
   display: flex;
+  /* Usar flex para alinear los elementos */
 }
 nav ul > li {
   display: inline-block;
+  /* Muestra los elementos en línea */
   position: relative;
+  /* Necesario para el submenú */
 }
-nav ul > li a {
+nav a {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
-  color: #fff;
-  background-color: rgba(231, 20, 136, 0.3);
+  color: white;
+  /* Color del texto */
+  background-color: rgba(231, 20, 136, 0.2980392157);
+  /* Color de fondo del menú principal */
+  color: #ffffff;
+  /* Color del texto */
 }
-nav ul > li a:hover {
+nav a:hover {
   background-color: #f562ba;
+  /* Color de fondo al pasar el mouse */
   color: #fff;
+  /* Color del texto al pasar el mouse */
+}
+nav li .submenu li a:hover {
+  background-color: #f562ba;
+  /* Color de fondo al pasar el mouse */
+  color: #fff;
+  /* Color del texto al pasar el mouse */
 }
 
+/* Estilo para los elementos del menú principal */
+/* Cambiar color al pasar el mouse */
 main {
   padding: 1rem;
   display: grid;
   grid-template-columns: 2fr;
   gap: 1rem;
-  animation: fadeIn 1.5s ease-in;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-main #hero {
+
+#hero {
   text-align: center;
   position: relative;
 }
-main #hero img {
-  width: 100%;
-  height: 30%;
+#hero img {
+  width: 100%; /* Hacer que la imagen sea responsiva */
+  height: 100%; /* Mantener la proporción */
 }
-main #hero button {
+#hero button {
   position: absolute;
   top: 80%;
   left: 75%;
   display: block;
   background-color: #e71488;
-  color: #fff;
+  color: white;
   border: none;
   cursor: pointer;
   transform: translate(10%, 10%);
   border-radius: 20px;
   padding: 0.5rem;
 }
-main #hero button:hover {
+#hero button:hover {
   background-color: rgba(231, 20, 136, 0.2);
   border-radius: 20px;
+  padding: 0.5rem;
 }
-main .video-container {
+
+img {
+  width: 100%;
+  height: 80px;
+}
+
+.video-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 20px; /* Espacio alrededor del contenedor */
 }
-main .video-container .video {
-  flex: 1;
-  text-align: center;
+.video-container .video {
+  flex: 1; /* Permite que el video ocupe el espacio disponible */
+  text-align: center; /* Centra el video dentro de su contenedor */
 }
-main .video-container .info-sections {
-  flex: 1;
-  margin-left: 20px;
+.video-container .info-sections {
+  flex: 1; /* Permite que la sección de información ocupe el espacio disponible */
+  margin-left: 20px; /* Espacio entre el video y las secciones */
 }
 
 #Suscribirse input[type=email],
@@ -122,15 +165,14 @@ main .video-container .info-sections {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-#Suscribirse input[type=email]:hover,
-#Suscribirse button:hover {
-  background-color: rgba(231, 20, 136, 0.2);
-}
 #Suscribirse button {
   background-color: #e71488;
-  color: #fff;
+  color: white;
   border: none;
   cursor: pointer;
+}
+#Suscribirse button:hover {
+  background-color: rgba(231, 20, 136, 0.2);
 }
 
 #como-comprar {
@@ -146,60 +188,238 @@ main .video-container .info-sections {
   padding-left: 1.5rem;
 }
 
+/* Estilo del submenú */
+nav li .submenu {
+  display: none;
+  /* Oculta el submenú por defecto */
+  position: absolute;
+  /* Se coloca en relación con el <li> padre */
+  left: 0;
+  top: 100%;
+  /* Se coloca justo debajo del elemento padre */
+  background-color: #e71488;
+  /* Color de fondo del submenu*/
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.082);
+  /* Sombra para el submenú */
+  z-index: 1;
+  /* Asegura que el submenú esté por encima */
+}
+nav li .submenu li {
+  width: 150px;
+  /* Ancho del submenú */
+}
+nav li .submenu li a {
+  padding: 10px 15px;
+  /* Espaciado dentro del enlace del submenú */
+  color: white;
+  /* Color del texto del submenú */
+}
+nav a:hover {
+  background-color: #f562ba;
+  /* Color de fondo al pasar el mouse */
+  color: #fff;
+  /* Color del texto al pasar el mouse */
+}
+nav li .submenu li a:hover {
+  background-color: #f562ba;
+  /* Color de fondo al pasar el mouse */
+  color: #fff;
+  /* Color del texto al pasar el mouse */
+}
+nav li:hover .submenu {
+  display: block;
+  /* Muestra el submenú al pasar el mouse sobre el padre */
+}
+
+/* Estilo de los elementos del submenú */
+/* Cambiar color al pasar el mouse */
+/* Mostrar el submenú al pasar el mouse sobre el padre */
+header {
+  background-color: #e71488;
+  color: white;
+  padding: none;
+}
+
+.main main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 1rem;
+}
+
+#Registro {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#Registro h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+#Registro form {
+  display: flex;
+  flex-direction: column;
+}
+#Registro form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#Registro form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#Registro form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+#Registro form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#Registro form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos de la sección de contacto */
+#Contactanos {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Centramos el contenido del contenedor */
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Alinea los elementos hijos al centro */
+}
+
+/* Etiquetas */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+  /* Cambia a bloque para que ocupen toda la línea */
+}
+
+/* Campos de entrada */
+input[type=text] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  /* Ancho total del contenedor */
+  max-width: 400px;
+  /* Ajusta este valor según tu diseño */
+  margin: 0 auto;
+  /* Centra el campo */
+}
+input[type=submit] {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  /* Ancho total del contenedor */
+  max-width: 400px;
+  /* Ajusta este valor según tu diseño */
+  margin: 20px 0 auto;
+  /* Centra el botón */
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#Complementos {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+  color: #e71488;
+}
+
+#Dijes {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+  color: #e71488;
+  background-color: #fff;
+}
+
+#Conjuntos {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+  color: #e71488;
+}
+
+#Anillos {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+  color: #e71488;
+}
+
 footer {
   background-color: #e71488;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem;
-  animation: fadeIn 1.5s ease-in;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 footer a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 footer a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .video-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .video-container .info-sections {
-    margin-left: 0;
-    margin-top: 20px;
-  }
+/* Estilos generales del menú principal */
+body {
+  margin: 0;
+  /* Eliminar márgenes predeterminados */
+  padding: 0;
+  /* Eliminar padding predeterminado */
 }
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  nav ul li a {
-    padding: 10px 20px;
-    display: block;
-  }
-}
-@media (min-width: 600px) {
-  nav ul {
-    justify-content: center;
-  }
-  nav ul li {
-    margin-right: 30px;
-  }
+
+#Pulseras {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Margen superior e inferior */
+  color: #e71488;
 }
 
 /*# sourceMappingURL=styles.css.map */

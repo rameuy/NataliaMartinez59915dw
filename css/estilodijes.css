@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
 }
-.header-contenido h2 {
+.header-contenido h1 {
     margin: 0;
 }
 
@@ -60,7 +60,7 @@ nav li .submenu li a:hover {
    
     color: #fff; /* Color del texto al pasar el mouse */
 }
-h1 {
+h2 {
     text-align: center;
     color: #e71488;
     background-color: #fff;
@@ -73,6 +73,7 @@ h1 {
     margin: 20px 0;
     /* Margen superior e inferior */
     color: #e71488;
+    background-color: #fff;
 }
 
 

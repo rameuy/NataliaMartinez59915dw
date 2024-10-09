@@ -1,0 +1,15 @@
+footer {
+    background-color: #e71488;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
