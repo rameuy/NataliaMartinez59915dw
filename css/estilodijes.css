@@ -18,16 +18,23 @@ body {
     margin: 0;
 }
 
-h1 {
+h1{
     margin: 0; /* Quitar margen del título */
-    color: #ffffff;
+    text-align: center;
+    color: #fff;
     background-color: #e71488;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 nav {
     background-color:#e71488; /* Color de fondo del menú principal */
     padding: 10px 0; /* Espaciado vertical */
     margin-left: auto; /* Empuja el nav a la derecha */
+   
 }
 
 nav ul {

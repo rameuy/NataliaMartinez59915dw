@@ -1,10 +1,12 @@
 
 .header-contenido {
-    background-color: #e71488;
+    background-color: $color-principal;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    animation: fadeIn 2s forwards; /* Animación de desvanecimiento */
+
 
     h1 {
         margin: 0;
@@ -15,12 +17,12 @@ h1 {
     margin: 0;
 
     /* Quitar margen del título */
-    color: #fff;
-    background-color: #e71488;
+    color: $color-texto;
+    background-color: $color-principal;
 }
 
 nav {
-    background-color: #e71488;
+    background-color: $color-principal;
 
     /* Color de fondo del menú principal */
     padding: 10px 0;
@@ -55,34 +57,36 @@ nav {
         display: block;
         padding: 15px 20px;
         text-decoration: none;
-        color: white;
+        color: $color-fondo;
 
         /* Color del texto */
 
         background-color: #e714884c;
 
         /* Color de fondo del menú principal */
-        color: #ffffff;
+        color: $color-fondo;
 
         /* Color del texto */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Animación */
 
         &:hover {
-            background-color: #f562ba;
+            background-color: $color-hover;
 
             /* Color de fondo al pasar el mouse */
 
-            color: #fff;
+            color: $color-texto;
 
             /* Color del texto al pasar el mouse */
+            transform: scale(1.1); /* Escalar al pasar el mouse */
         }
     }
 
     li .submenu li a:hover {
-        background-color: #f562ba;
+        background-color: $color-hover;
 
         /* Color de fondo al pasar el mouse */
 
-        color: #fff;
+        color: $color-hover;
 
         /* Color del texto al pasar el mouse */
     }
