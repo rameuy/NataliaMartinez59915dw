@@ -70,6 +70,11 @@ nav li .submenu li a:hover {
    
     color: #fff; /* Color del texto al pasar el mouse */
 }
+h3 {
+    text-align: center;
+    color: #e71488;
+    background-color: #fff;
+}
 
 /*--------------------------------------------------*/
 /* Main Section */

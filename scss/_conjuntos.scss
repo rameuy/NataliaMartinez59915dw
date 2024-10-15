@@ -7,3 +7,11 @@
     /* Margen superior e inferior */
     color: $color-fondo;
 }
+
+// Estilo para las imágenes dentro de las tarjetas
+.card-img-top {
+    width: 100%; // Ajusta el ancho de la imagen
+    height: auto; // Ajusta la altura de la imagen de forma proporcional
+    max-height: 200px; // Puedes definir una altura máxima si es necesario
+    object-fit: cover; // Asegura que la imagen cubra el contenedor sin distorsionarse
+}

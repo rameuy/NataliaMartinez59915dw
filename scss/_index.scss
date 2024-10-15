@@ -11,10 +11,9 @@ main {
     position: relative;
 
     img {
-        width: 100%;
-        /* Hacer que la imagen sea responsiva */
-        height: 100%;
-        /* Mantener la proporción */
+        width: 100%; /* Hacer que la imagen sea responsiva */
+        height: 100%; /* Mantener la proporción */
+        margin-top: auto;
     }
 
     button {
@@ -47,27 +46,21 @@ img {
 .video-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    /* Espacio alrededor del contenedor */
+    margin: 20px; /* Espacio alrededor del contenedor */
 
     .video {
-        flex: 1;
-        /* Permite que el video ocupe el espacio disponible */
-        text-align: center;
-        /* Centra el video dentro de su contenedor */
+        flex: 1; /* Permite que el video ocupe el espacio disponible */
+        text-align: center; /* Centra el video dentro de su contenedor */
     }
 
     .info-sections {
-        flex: 1;
-        /* Permite que la sección de información ocupe el espacio disponible */
-        margin-left: 20px;
-        /* Espacio entre el video y las secciones */
+        flex: 1; /* Permite que la sección de información ocupe el espacio disponible */
+        margin-left: 20px; /* Espacio entre el video y las secciones */
     }
 }
 
 // Suscribirse Section
 #Suscribirse {
-
     input[type="email"],
     button {
         padding: 0.5rem;
@@ -86,21 +79,21 @@ img {
             background-color: #e7148833;
         }
     }
+}
 
-    // Cómo Comprar Section
-    #como-comprar {
-        background-color: $color-fondo;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// Cómo Comprar Section
+#como-comprar {
+    background-color: $color-fondo;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+    ul {
+        padding-left: 1.5rem;
+
+        // Si hay una lista anidada, mantenla, de lo contrario elimínala
         ul {
             padding-left: 1.5rem;
-
-            // Si hay una lista anidada, mantenla, de lo contrario elimínala
-            ul {
-                padding-left: 1.5rem;
-            }
         }
     }
 }
