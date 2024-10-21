@@ -7,9 +7,11 @@ footer {
     a {
         color: $color-texto;
         text-decoration: none;
+        
 
         &:hover {
             text-decoration: underline;
         }
     }
 }
+

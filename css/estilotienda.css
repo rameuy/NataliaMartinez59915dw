@@ -122,18 +122,6 @@ header {
     }
 }
 
-/* Main Section*/
-
-
-#hero img {
-    width: 100%; /* Hacer que la imagen sea responsiva */
-    height: 30%; /* Mantener la proporción */
-}
-
-img {
-    width: 100%;
-    height: 80px;
-}
 
 /* Hero Section */
 #hero {
